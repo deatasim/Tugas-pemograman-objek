@@ -1,0 +1,57 @@
+public class Main {
+  public static void main(String[] args) {
+    int num = 10; // Representasi biner: 00001010
+    int n = 3; // Bit ke-3 (dihitung dari kanan)
+
+    // Mengatur bit ke-n menjadi 1
+    int mask = 1 << (n - 1); // Representasi biner: 00001000
+    int result = num | mask; // Representasi biner: 00001010 | 00001000 = 00001010
+
+    System.out.println("Nilai awal: " + num);
+    System.out.println("Nilai setelah diatur bit ke-" + n + ": " + result);
+  }
+} 
+
+public class OperatorLogika {
+
+    public static void main(String[] args) {
+
+        // Deklarasi variabel
+        int umur = 20;
+        boolean punyaSIM = true;
+
+        // Contoh penggunaan operator logika dalam kondisi if
+        if (umur >= 17 && punyaSIM) {
+            System.out.println("Anda boleh mengemudi.");
+        } else {
+            System.out.println("Anda belum boleh mengemudi.");
+        }
+
+        // Contoh lain menggunakan operator logika
+        boolean isWeekend = false;
+        boolean isHoliday = true;
+
+        if (isWeekend || isHoliday) {
+            System.out.println("Hari ini libur.");
+        } else {
+            System.out.println("Hari ini hari kerja.");
+        }
+    }
+} 
+
+
+public class OperatorPenugasan {
+
+    public static void main(String[] args) {
+
+        int jumlahUang = 10000;
+
+        // Membeli minuman seharga 5000
+        jumlahUang -= 5000; 
+        System.out.println("Sisa uang: " + jumlahUang); // Output: Sisa uang: 5000
+
+        // Mendapatkan tambahan uang 2000
+        jumlahUang += 2000;
+        System.out.println("Sisa uang: " + jumlahUang); // Output: Sisa uang: 7000
+    }
+}
